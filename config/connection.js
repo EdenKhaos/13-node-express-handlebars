@@ -1,7 +1,7 @@
 //  Set up MySQL connection.
 var mysql = require("mysql");
 
-// Connect to MySQL and make sure to change PW
+// Connect to MySQL and make sure to change your PW
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3000,
@@ -19,5 +19,5 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
-// Export connection for our ORM to use.
+// Export connection for the ORM to use.
 module.exports = connection;
