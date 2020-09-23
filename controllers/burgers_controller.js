@@ -9,11 +9,12 @@ var router = express.Router();
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
+    console.log("data")
   burger.selectAll(function(data) {
     var hbsObject = {
       burgers: data
     };
-    console.log(hbsObject);
+    console.log("hbsObject", data);
     res.render("index", hbsObject);
   });
 });

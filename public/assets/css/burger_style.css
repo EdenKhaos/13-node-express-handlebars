@@ -1,7 +1,7 @@
 body {
     width: 99%;
     height: 900px;
-    background-color: #fc6;
+    background-color: rgb(255, 244, 86) !important;
 }
 .jumbotron {
     background-image: url("https://i.pinimg.com/originals/46/b7/d5/46b7d56445a1675781ba4bd97fd62a35.jpg");
@@ -35,8 +35,11 @@ body {
 }
 
 #righthead {
-    background-color: #f0ad4e;
+    background-color: #fd9a2a;
     color: white;
     text-align: center;
     font-size: 1.2em;
+}
+#eatbutton {
+    color: rgb(64, 111, 240);
 }
